@@ -16,7 +16,7 @@ __pycache__/
 .old*/
 log/
 
-10-Q/
+data/
 idx/
 mstrIdx/
 unload/

@@ -4,7 +4,8 @@ from requests import get
 
 # DEFAULT_TICKERS = ['goog', 'aapl']
 def cikftick(ticks=['goog', 'aapl']):
-    URL = 'https://www.sec.gov/cgi-bin/browse-edgar?CIK={}&owner=exclude&action=getcompany&Find=Search'
+    URL = 'https://www.sec.gov/cgi-bin/browse-edgar?CIK={}'
+    URL += '&owner=exclude&action=getcompany&Find=Search'
     CIK_RE = re.compile(r'.*CIK=(\d{10}).*')
 
     cik_dict = {}
